@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	
+}
+
+
+body {
+    
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+	    bottom: 0;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.banner-image, .about-image, .car-image, .contact-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+.map-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+h1 {
+    
+    padding: 20px;
+    text-align: center;
+}
+main {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.images-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.text-container p {
+    margin-bottom: 10px;
+}
+
+.blocks-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows the blocks to wrap if screen width is narrow */
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto; /* Center align with the same margins as the main content */
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 220px;
+    text-align: center;
+}
+
+.block img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.block p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    text-align: left; /* Aligns the text to the left for readability */
+}
+
+.block a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.block a:hover {
+    text-decoration: underline;
+}
+.about-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #35424a;
+}
+
+.intro p {
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Core Values Section */
+.values {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevents wrapping to keep items in a single row */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-block {
+    flex: 1; /* Distributes the blocks evenly across the row */
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 300px;
+}
+
+.value-block img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.value-block h3 {
+    color: #35424a;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    color: #35424a;
+    margin: 10px 0 5px;
+}
+.first-car-description {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.first-car-description h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+.first-car-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Each Slide */
+.slide {
+    display: none;
+    position: relative;
+}
+
+/* Slide Image */
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Slide Caption */
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
